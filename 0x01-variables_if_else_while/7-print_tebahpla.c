@@ -2,7 +2,7 @@
 
 /**
  * main - is he main f
- * 
+ *
  * Return: equals 0
 */
 
