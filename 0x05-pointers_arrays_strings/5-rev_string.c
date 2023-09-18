@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string, in reverse, followed by a new line
+ * rev_string - prints a string, in reverse, followed by a new line
  * @s: parameter
+ * Return: 0
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i;
-	int count = 0;
+	int len = 0, index = 0;
+	char tmp;
 
-	for (i = 0 ; s[i] != '\0' ; i++)
-		count++;
-	for (i = 0 ; i < count / 2 ; i++)
+	while (s[index++])
+	len++;
+
+	for (index = len - 1 ; index >= len / 2 ; index--)
 	{
-		char j;
-
-		j = s[i];
-		s[i] = s[count - 1 - i];
-		s[count - 1 - i] = j;
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] = tmp;
 	}
 }
