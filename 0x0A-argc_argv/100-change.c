@@ -38,6 +38,6 @@ int main(int argc, char *argv[])
 			cents = cents - 1;
 		coins++;
 	}
-	printf("%d/n", coins);
+	printf("%d\n", coins);
 	return (0);
 }
